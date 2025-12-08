@@ -13,13 +13,13 @@ source:
   sha256: 31a41292799992bdc913e03c9fac2a8c90c82a5cbbc792b2e3373b01da841e3e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
-    - nodejs
+    - nodejs >20 #simply to avoid having two versions since nodejs isn't a running dependancie
   host:
     - python ${{ python_min }}*
     - hatchling >=1.27.0
@@ -27,6 +27,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - yt-dlp #not an actual dependancies, but is useless without it
 
 tests:
   - python:
