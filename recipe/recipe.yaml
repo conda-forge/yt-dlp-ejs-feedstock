@@ -19,7 +19,7 @@ build:
 
 requirements:
   build:
-    - nodejs >20
+    - nodejs >20 #simply to avoid having two versions since nodejs isn't a running dependancie
   host:
     - python ${{ python_min }}*
     - hatchling >=1.27.0
