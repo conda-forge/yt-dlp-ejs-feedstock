@@ -11,6 +11,8 @@ Summary: External JavaScript for yt-dlp supporting many runtimes
 
 Development: https://github.com/yt-dlp/ejs
 
+Documentation: https://github.com/yt-dlp/yt-dlp/wiki/EJS
+
 Current build status
 ====================
 

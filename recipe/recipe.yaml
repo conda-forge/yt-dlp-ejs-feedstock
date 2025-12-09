@@ -13,7 +13,7 @@ source:
   sha256: 31a41292799992bdc913e03c9fac2a8c90c82a5cbbc792b2e3373b01da841e3e
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -42,6 +42,7 @@ about:
   license_file: LICENSE
   repository: https://github.com/yt-dlp/ejs
   homepage: https://github.com/yt-dlp/ejs
+  documentation: https://github.com/yt-dlp/yt-dlp/wiki/EJS
 
 extra:
   recipe-maintainers:
