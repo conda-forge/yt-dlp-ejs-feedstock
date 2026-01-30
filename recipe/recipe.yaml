@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp-ejs
-  version: 0.3.2
+  version: "0.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/yt_dlp_ejs-${{ version }}.tar.gz
-  sha256: 31a41292799992bdc913e03c9fac2a8c90c82a5cbbc792b2e3373b01da841e3e
+  sha256: 3c67e0beb6f9f3603fbcb56f425eabaa37c52243d90d20ccbcce1dd941cfbd07
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -35,7 +35,7 @@ tests:
         - yt_dlp_ejs
       pip_check: true
       python_version: ${{ python_min }}.*
-       
+
 about:
   summary: External JavaScript for yt-dlp supporting many runtimes
   license: Unlicense
