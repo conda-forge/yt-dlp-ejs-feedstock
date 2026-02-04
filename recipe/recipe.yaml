@@ -13,13 +13,13 @@ source:
   sha256: 3c67e0beb6f9f3603fbcb56f425eabaa37c52243d90d20ccbcce1dd941cfbd07
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
-    - nodejs >20 #simply to avoid having two versions since nodejs isn't a running dependancie
+    - deno
   host:
     - python ${{ python_min }}*
     - hatchling >=1.27.0
