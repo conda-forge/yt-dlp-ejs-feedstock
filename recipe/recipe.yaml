@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp-ejs
-  version: "0.6.0"
+  version: "0.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/yt_dlp_ejs-${{ version }}.tar.gz
-  sha256: 50ad37866aa6d1d069ab20f6d0fccf41e7f07f249b4feb80eff7a66fd5928de7
+  sha256: ecac13eb9ff948da84b39f1030fa03422abaf32dc58a0edd78f5dbcc03843556
 
 build:
   number: 0
